@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Raymond</title>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav-bar">
+        <div class="nav-bar__lanList">
+          <button class="navbar__lan" id="en">en</button>
+          <button class="navbar__lan" id="es">es</button>
+          <button class="navbar__lan" id="ja">ja</button>
+        </div>
+      </nav>
+      <div class="hero">
+        <h1 class="hero__name"></h1>
+        <p class="hero__job-title"></p>
+        <p class="hero__job-interests"></p>
+      </div>
+      <div class="projects">
+        <ul class="projects__list">
+          <template class="projects__card-template">
+            <li class="projects__card">
+              <img class="card__img" src="#" alt="Picture of Project" />
+              <h2 class="card__title"></h2>
+              <p class="card__description"></p>
+              <ul class="card__tags-list">
+                <template class="card__tags-list-template">
+                  <li class="card__tag"></li>
+                </template>
+              </ul>
+            </li>
+          </template>
+        </ul>
+      </div>
+      <!-- <div class="experience"></div> -->
+    </div>
+    <script type="module" src="./localize.js"></script>
+  </body>
+</html>

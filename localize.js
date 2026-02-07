@@ -11,6 +11,7 @@ const esBtn = document.querySelector("#es");
 const jaBtn = document.querySelector("#ja");
 const userLan =
   navigator.language.slice(0, 2) || navigator.userLanguage.slice(0, 2);
+
 function switchLan(btn, data) {
   btn.addEventListener("click", (e) => {
     e.preventDefault();

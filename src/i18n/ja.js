@@ -1,14 +1,24 @@
 const jaData = {
   name: `webDeveloper42 / Raymond F. A.`,
-  title: `Software Engineer in Japanese`,
-  jobInterests: `Looking to work with companies in Japan`,
+  title: `ソフトウェアエンジニア`,
+  email: `rfrias1869@gmail.com`,
+  jobInterests: `日本の企業と一緒に働くことを希望しています`,
   projects: [
     {
-      img: `#`,
-      imgAlt: `img alt`,
-      title: `This is a dummy title in japanese`,
-      description: `This is a dummy description `,
-      tags: [`HTML`, `CSS3`, `JavaScript`],
+      img: `./src/assets/WTWRProject.png`,
+      imgAlt: `WTWRプロジェクトのスクリーンショット`,
+      title: `WTWR`,
+      description: `ユーザーの場所の現在の天気を表示し、何を着るかを提案する天気アプリです。`,
+      tags: [`React`, `CSS3`, `JavaScript`, `RESTful API`, `Geolocation API`],
+      link: `https://webdeveloper42.github.io/se_project_react/`,
+    },
+    {
+      img: `./src/assets/ShrineFinderDB.png`,
+      imgAlt: `Shrine Finderプロジェクトのスクリーンショット`,
+      title: `Shrine Finder`,
+      description: `日本の神社をデータベースでリストするアプリです。`,
+      tags: [`HTML5`, `CSS3`, `JavaScript`, `Database`],
+      link: `https://webdeveloper42.github.io/shrine-database/`,
     },
   ],
 };

@@ -2,6 +2,7 @@ import { enData } from "./src/i18n/en.js";
 import { esData } from "./src/i18n/es.js";
 import { jaData } from "./src/i18n/ja.js";
 const heroName = document.querySelector(".hero__name");
+const jobEmail = document.querySelector(".hero__email");
 const jobTitle = document.querySelector(".hero__job-title");
 const jobInterests = document.querySelector(".hero__job-interests");
 const template = document.querySelector(".projects__card-template");
@@ -24,6 +25,7 @@ function matchLanData(data) {
 }
 function setHeroText(data) {
   heroName.innerHTML = data.name;
+  jobEmail.innerHTML = data.email;
   jobTitle.innerHTML = data.title;
   jobInterests.innerHTML = data.jobInterests;
 }
@@ -41,6 +43,9 @@ function setProjects(data) {
     cardImg.alt = project.imgAlt;
     cardTitle.textContent = project.title;
     cardDescription.textContent = project.description;
+    card.addEventListener("click", () => {
+      window.open(`${project.link}`);
+    });
     projectsList.append(projectCard);
     tagList.innerHTML = "";
     for (const tag of project.tags) {

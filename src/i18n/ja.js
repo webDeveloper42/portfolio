@@ -5,12 +5,20 @@ const jaData = {
   jobInterests: `日本の企業と一緒に働くことを希望しています`,
   projects: [
     {
-      img: `#`,
-      imgAlt: `Spotsプロジェクト`,
-      title: `Spots`,
-      description: `ユーザーの写真を紹介するデモ写真共有アプリです。`,
-      tags: [`HTML5`, `CSS3`, `JavaScript`, `RESTful API`, `OOP`],
-      link: `https://webdeveloper42.github.io/se_project_spots/`,
+      img: `./src/assets/WTWRProject.png`,
+      imgAlt: `WTWRプロジェクトのスクリーンショット`,
+      title: `WTWR`,
+      description: `ユーザーの場所の現在の天気を表示し、何を着るかを提案する天気アプリです。`,
+      tags: [`React`, `CSS3`, `JavaScript`, `RESTful API`, `Geolocation API`],
+      link: `https://webdeveloper42.github.io/se_project_react/`,
+    },
+    {
+      img: `./src/assets/ShrineFinderDB.png`,
+      imgAlt: `Shrine Finderプロジェクトのスクリーンショット`,
+      title: `Shrine Finder`,
+      description: `日本の神社をデータベースでリストするアプリです。`,
+      tags: [`HTML5`, `CSS3`, `JavaScript`, `Database`],
+      link: `https://webdeveloper42.github.io/shrine-database/`,
     },
   ],
 };

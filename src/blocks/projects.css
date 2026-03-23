@@ -1,0 +1,33 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.projects__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(auto-fit, 250px);
+  gap: 20px;
+  padding: 0px;
+}
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  transform: translate(0px, -20px);
+  cursor: pointer;
+}
+.card__img {
+  height: 150px;
+}
+.card__tags-list {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}

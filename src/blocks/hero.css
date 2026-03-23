@@ -1,0 +1,18 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  text-align: center;
+}
+.hero__job-title,
+.hero__email,
+.hero__job-interests {
+  font-size: 20px;
+  padding: 5px 0px;
+  margin: 0px;
+}
+.hero__name {
+  margin-top: 5px;
+}

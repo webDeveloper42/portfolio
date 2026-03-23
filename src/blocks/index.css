@@ -1,0 +1,35 @@
+/* darkest : #403F3C /w white text*/
+/* darker: #595856 /w white text */
+/* dark : #8C8B88 /w dark text */
+/* paper white : #F2F0EB /w dark text */
+/* white grey : #D9D6D2 /w dark text */
+html {
+  background-color: #f2f0eb;
+  color: #403f3c;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+a {
+  color: #403f3c;
+  text-decoration: none;
+  cursor: pointer;
+  border-color: #595856;
+  outline: none;
+}
+a:hover {
+  border-bottom: 1px solid #595856;
+}
+button {
+  cursor: pointer;
+  background-color: #d9d6d2;
+  color: #595856;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 10px;
+  outline: none;
+}
+button:hover {
+  background-color: #8c8b88;
+  color: #d9d6d2;
+  transition: 0.6s ease;
+}

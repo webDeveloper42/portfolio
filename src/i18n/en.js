@@ -16,7 +16,7 @@ const enData = {
       img: `./src/assets/ShrineFinderDB.png`,
       imgAlt: `A screenshot of the Shrine Finder project`,
       title: `Shrine Finder`,
-      description: `An app that list shrines a database of in Japan`,
+      description: `An app that list shrines into a database of Japan`,
       tags: [`HTML5`, `CSS3`, `JavaScript`, `Database`],
       link: `https://webdeveloper42.github.io/shrine-database/`,
     },

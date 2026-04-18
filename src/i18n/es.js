@@ -20,6 +20,14 @@ const esData = {
       tags: [`HTML5`, `CSS3`, `JavaScript`, `Database`],
       link: `https://webdeveloper42.github.io/shrine-database/`,
     },
+    {
+      img: `./src/assets/discover-yourself.png`,
+      imgAlt: `Una captura de pantalla del proyecto Discover Yourself`,
+      title: `Discover Yourself`,
+      description: `Una aplicación espiritual en vivo y monetizada para usuarios y creadores`,
+      tags: [`MERN`, `FullStack`],
+      link: `https://discover-yourself.onrender.com/`,
+    },
   ],
 };
 export { esData };

@@ -20,6 +20,14 @@ const jaData = {
       tags: [`HTML5`, `CSS3`, `JavaScript`, `Database`],
       link: `https://webdeveloper42.github.io/shrine-database/`,
     },
+    {
+      img: `./src/assets/discover-yourself.png`,
+      imgAlt: `ディスカバー・ユアセルフのスクリーンショット`,
+      title: `ディスカバー・ユアセルフ`,
+      description: `ユーザーとクリエイター向けの収益化されたスピリチュアルアプリ`,
+      tags: [`MERN`, `フルスタック`],
+      link: `https://discover-yourself.onrender.com/`,
+    },
   ],
 };
 export { jaData };

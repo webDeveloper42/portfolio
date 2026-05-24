@@ -1,4 +1,29 @@
 .page {
   display: flex;
   flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+  position: relative;
+}
+
+/* subtle paper grain using a repeating micro-pattern */
+.page::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 27px,
+      rgba(89, 88, 86, 0.06) 28px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page > * {
+  position: relative;
+  z-index: 1;
 }

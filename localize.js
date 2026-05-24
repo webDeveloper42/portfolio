@@ -23,8 +23,23 @@ function matchLanData(data) {
   setHeroText(data);
   setProjects(data);
 }
+function typewrite(el, text, speed = 55) {
+  el.classList.remove('typing-done');
+  el.textContent = '';
+  let i = 0;
+  const tick = () => {
+    if (i < text.length) {
+      el.textContent += text[i++];
+      setTimeout(tick, speed);
+    } else {
+      el.classList.add('typing-done');
+    }
+  };
+  tick();
+}
+
 function setHeroText(data) {
-  heroName.innerHTML = data.name;
+  typewrite(heroName, data.name);
   jobEmail.innerHTML = data.email;
   jobTitle.innerHTML = data.title;
   jobInterests.innerHTML = data.jobInterests;

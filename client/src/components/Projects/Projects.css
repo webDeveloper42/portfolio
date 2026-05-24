@@ -1,0 +1,31 @@
+.projects {
+  padding: 64px 0 0;
+}
+
+.projects__header {
+  margin-bottom: 40px;
+}
+
+.projects__heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  margin-bottom: 8px;
+}
+
+.projects__subheading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: #888888;
+}
+
+.projects__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}

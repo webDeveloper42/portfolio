@@ -1,5 +1,30 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 0px;
+  align-items: center;
+  padding: 24px 0 12px;
+  border-bottom: 1px solid #d9d6d2;
+  gap: 8px;
+}
+
+.navbar__lanList {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* stamp label before the buttons */
+.navbar__lanList::before {
+  content: 'LANG';
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  color: #8c8b88;
+  margin-right: 4px;
+}
+
+.navbar__lan {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  padding: 3px 10px;
 }

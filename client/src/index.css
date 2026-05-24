@@ -1,0 +1,66 @@
+/* ── Palette ──────────────────────────────────────────────────────
+   ink-black  : #0A0A0A   primary text
+   ink-dark   : #1A1A1A   headings
+   ink-medium : #4A4A4A   secondary / borders
+   ink-light  : #888888   muted labels
+   white      : #FFFFFF   page background
+   off-white  : #F7F7F7   card surface
+   border     : #E2E2E2   dividers / card borders
+─────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+a:hover {
+  border-bottom-color: #4a4a4a;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  color: #4a4a4a;
+  border: 1px solid #888888;
+  border-radius: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+button:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}

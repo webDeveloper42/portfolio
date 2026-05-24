@@ -1,0 +1,23 @@
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 48px 100px;
+}
+
+.page__status {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.page__status-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+.page__status--error .page__status-text {
+  color: #b03a2e;
+}

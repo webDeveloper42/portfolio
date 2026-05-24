@@ -29,3 +29,32 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
+
+.projects__list--single {
+  grid-template-columns: minmax(0, 780px);
+  justify-content: center;
+}
+
+.projects__list--single .project-card {
+  min-height: 360px;
+}
+
+@media (min-width: 760px) {
+  .projects__list--single .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  }
+
+  .projects__list--single .project-card__image {
+    height: 100%;
+    min-height: 360px;
+    object-fit: contain;
+    background-color: #090912;
+    border-bottom: 0;
+    border-right: 1px solid #e2e2e2;
+  }
+
+  .projects__list--single .project-card__body {
+    padding: 28px 28px 0;
+  }
+}

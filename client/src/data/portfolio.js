@@ -5,7 +5,7 @@ const profileByLang = {
     title: 'Entrepreneur & Builder',
     email: 'rfrias1869@gmail.com',
     jobInterests: 'Building products for the Japanese market.',
-    tagline: 'I build and ship digital products that solve real problems.',
+    tagline: 'I build and ship products that align to spirituality',
   },
   es: {
     lang: 'es',

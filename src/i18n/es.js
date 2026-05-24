@@ -5,12 +5,12 @@ const esData = {
   jobInterests: `Estoy buscando trabajar con empresas en Japón`,
   projects: [
     {
-      img: `./src/assets/WTWRProject.png`,
-      imgAlt: `Una captura de pantalla del proyecto WTWR`,
-      title: `WTWR`,
-      description: `Una aplicación del clima que te muestra el clima actual en tu ubicación y te sugiere qué ponerte.`,
-      tags: [`React`, `CSS3`, `JavaScript`, `RESTful API`, `Geolocation API`],
-      link: `https://webdeveloper42.github.io/se_project_react/`,
+      img: `./src/assets/discover-yourself.png`,
+      imgAlt: `Una captura de pantalla del proyecto Discover Yourself`,
+      title: `Discover Yourself`,
+      description: `Una aplicación espiritual en vivo y monetizada para usuarios y creadores`,
+      tags: [`MERN`, `FullStack`],
+      link: `https://discover-yourself.onrender.com/`,
     },
     {
       img: `./src/assets/ShrineFinderDB.png`,

@@ -1,33 +1,117 @@
 .projects {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 0px;
-  justify-content: center;
+  padding: 48px 0 0;
 }
+
+/* section heading */
+.projects::before {
+  content: '— SELECTED WORK —';
+  display: block;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  color: #8c8b88;
+  margin-bottom: 36px;
+}
+
 .projects__list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(auto-fit, 250px);
-  gap: 20px;
-  padding: 0px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  padding: 0;
+  margin: 0;
 }
+
 .projects__card {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 250px;
-  text-align: center;
-  transform: translate(0px, -20px);
+  background-color: #ede9e1;
+  border: 1px solid #d9d6d2;
+  /* paper lift shadow */
+  box-shadow:
+    1px 1px 0 #c8c4be,
+    3px 3px 0 #d9d6d2,
+    6px 6px 16px rgba(44, 43, 40, 0.1);
   cursor: pointer;
+  transform: translateY(0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  position: relative;
 }
+
+.projects__card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    1px 1px 0 #c8c4be,
+    3px 3px 0 #d9d6d2,
+    8px 12px 28px rgba(44, 43, 40, 0.18);
+}
+
+/* top fold corner */
+.projects__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 22px 22px 0;
+  border-color: transparent #f2f0eb transparent transparent;
+  z-index: 2;
+}
+
 .card__img {
-  height: 150px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #d9d6d2;
+  filter: sepia(12%) contrast(1.02);
+  transition: filter 0.3s ease;
 }
+.projects__card:hover .card__img {
+  filter: sepia(0%) contrast(1.05);
+}
+
+.card__title {
+  font-family: 'Special Elite', monospace;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 18px 18px 6px;
+  color: #1c1b18;
+}
+
+.card__description {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: #595856;
+  margin: 0 18px 14px;
+  flex-grow: 1;
+}
+
 .card__tags-list {
   display: flex;
-  padding: 0px;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 18px 18px;
+  gap: 8px;
   list-style: none;
+  margin: 0;
+  border-top: 1px dashed #d9d6d2;
+  padding-top: 12px;
+}
+
+.card__tag {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #595856;
+  border: 1px solid #c8c4be;
+  padding: 2px 8px;
+  background-color: #f2f0eb;
 }

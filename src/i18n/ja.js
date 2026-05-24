@@ -5,13 +5,14 @@ const jaData = {
   jobInterests: `日本の企業と一緒に働くことを希望しています`,
   projects: [
     {
-      img: `./src/assets/WTWRProject.png`,
-      imgAlt: `WTWRプロジェクトのスクリーンショット`,
-      title: `WTWR`,
-      description: `ユーザーの場所の現在の天気を表示し、何を着るかを提案する天気アプリです。`,
-      tags: [`React`, `CSS3`, `JavaScript`, `RESTful API`, `Geolocation API`],
-      link: `https://webdeveloper42.github.io/se_project_react/`,
+      img: `./src/assets/discover-yourself.png`,
+      imgAlt: `ディスカバー・ユアセルフのスクリーンショット`,
+      title: `ディスカバー・ユアセルフ`,
+      description: `ユーザーとクリエイター向けの収益化されたスピリチュアルアプリ`,
+      tags: [`MERN`, `フルスタック`],
+      link: `https://discover-yourself.onrender.com/`,
     },
+
     {
       img: `./src/assets/ShrineFinderDB.png`,
       imgAlt: `Shrine Finderプロジェクトのスクリーンショット`,

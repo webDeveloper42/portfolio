@@ -1,35 +1,64 @@
-/* darkest : #403F3C /w white text*/
-/* darker: #595856 /w white text */
-/* dark : #8C8B88 /w dark text */
-/* paper white : #F2F0EB /w dark text */
-/* white grey : #D9D6D2 /w dark text */
+/* ── Palette ──────────────────────────────────────────────────────────────
+   ink-black   : #1C1B18   — primary text
+   ink-dark    : #2C2B28   — headings
+   ink-medium  : #595856   — secondary text / borders
+   ink-light   : #8C8B88   — muted labels
+   paper-warm  : #F2F0EB   — page background
+   paper-mid   : #E8E4DC   — card surface
+   paper-edge  : #D9D6D2   — card borders / dividers
+   paper-crease: #C8C4BE   — subtle accent lines
+──────────────────────────────────────────────────────────────────────── */
+
 html {
   background-color: #f2f0eb;
-  color: #403f3c;
-  padding-left: 50px;
-  padding-right: 50px;
+  color: #1c1b18;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3 {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  letter-spacing: 0.12em;
+  color: #2c2b28;
+  font-weight: 400;
+}
+
 a {
-  color: #403f3c;
+  color: #2c2b28;
   text-decoration: none;
   cursor: pointer;
-  border-color: #595856;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
   outline: none;
 }
 a:hover {
   border-bottom: 1px solid #595856;
 }
+
 button {
   cursor: pointer;
-  background-color: #d9d6d2;
+  background-color: transparent;
   color: #595856;
-  border: none;
-  border-radius: 5px;
-  padding: 3px 10px;
+  border: 1px solid #8c8b88;
+  border-radius: 0;
+  padding: 4px 14px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 button:hover {
-  background-color: #8c8b88;
-  color: #d9d6d2;
-  transition: 0.6s ease;
+  background-color: #2c2b28;
+  color: #f2f0eb;
+  border-color: #2c2b28;
+}
+button.active {
+  background-color: #2c2b28;
+  color: #f2f0eb;
+  border-color: #2c2b28;
 }

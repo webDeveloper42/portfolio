@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px 0 12px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.navbar__lang-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.navbar__lang-list::before {
+  content: 'LANG';
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.24em;
+  color: #888888;
+  margin-right: 4px;
+}
+
+.navbar__lang-item {
+  display: flex;
+}
+
+.navbar__lang-btn {
+  padding: 3px 10px;
+}
+
+.navbar__lang-btn--active {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}

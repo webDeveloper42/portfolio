@@ -4,7 +4,7 @@ const ui = {
     ventures: 'Ventures',
     venturesSubheading: 'Products built and shipped to real users.',
     stats: [
-      { value: '2', label: 'Shipped Products' },
+      { value: '1', label: 'Shipped Product' },
       { value: 'MERN', label: 'Full-Stack' },
       { value: 'JP', label: 'Target Market' },
     ],
@@ -14,7 +14,7 @@ const ui = {
     ventures: 'Proyectos',
     venturesSubheading: 'Productos construidos y lanzados a usuarios reales.',
     stats: [
-      { value: '2', label: 'Productos Lanzados' },
+      { value: '1', label: 'Producto Lanzado' },
       { value: 'MERN', label: 'Full-Stack' },
       { value: 'JP', label: 'Mercado Objetivo' },
     ],
@@ -24,7 +24,7 @@ const ui = {
     ventures: 'プロダクト',
     venturesSubheading: '実際のユーザーに届けた製品。',
     stats: [
-      { value: '2', label: 'リリース済み製品' },
+      { value: '1', label: 'リリース済み製品' },
       { value: 'MERN', label: 'フルスタック' },
       { value: 'JP', label: 'ターゲット市場' },
     ],

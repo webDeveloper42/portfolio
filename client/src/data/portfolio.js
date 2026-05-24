@@ -42,6 +42,7 @@ const projectsByLang = {
       _id: 'shrine-finder-en',
       lang: 'en',
       order: 1,
+      hidden: true,
       title: 'Shrine Finder',
       description: 'An app that lists shrines into a database of Japan',
       img: './assets/ShrineFinderDB.png',
@@ -66,6 +67,7 @@ const projectsByLang = {
       _id: 'shrine-finder-es',
       lang: 'es',
       order: 1,
+      hidden: true,
       title: 'Buscador de Santuarios',
       description: 'Una aplicación que lista santuarios en una base de datos de Japón',
       img: './assets/ShrineFinderDB.png',
@@ -90,6 +92,7 @@ const projectsByLang = {
       _id: 'shrine-finder-ja',
       lang: 'ja',
       order: 1,
+      hidden: true,
       title: 'Shrine Finder',
       description: '日本の神社をデータベースでリストするアプリです。',
       img: './assets/ShrineFinderDB.png',
@@ -105,6 +108,6 @@ export function getPortfolioData(lang = 'en') {
 
   return {
     profile: profileByLang[safeLang],
-    projects: projectsByLang[safeLang],
+    projects: projectsByLang[safeLang].filter((project) => !project.hidden),
   };
 }
